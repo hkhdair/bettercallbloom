@@ -40,7 +40,7 @@ lm_datasets = tokenized_dataset.map(
 )
 
 training_args = TrainingArguments(
-    f"bloom3b-finetuned-pileoflaw_reddit",
+    "bloom3b-finetuned-pileoflaw_reddit",
     per_device_train_batch_size=16,
     gradient_checkpointing=True,
     gradient_accumulation_steps=4,
